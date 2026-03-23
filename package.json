@@ -6,7 +6,7 @@
   "scripts": {
     "dev": "webpack-dev-server --open --mode development --port 8080",
     "start": "node app.js",
-    "dev:test": "jest",
+    "dev:test": "jest ./test/*.jest.spec.jsx",
     "test": "playwright test",
     "test:report": "playwright show-report",
     "end2end": "playwright test --project=chromium --project=firefox",
