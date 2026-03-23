@@ -18,6 +18,10 @@ jobs:
       - name: Check style
         run: npm run lint
       - name: Run tests
-        run: npm run test
+        run: npm run dev:test
       - name: Build app
         run: npm run build
+      - name: Install Playwright browsers
+        run: npx playwright install --with-deps
+      - name: Run tests
+        run: npm run test
